@@ -1,5 +1,8 @@
 {% ckan_extends %}
-
+{% block data_preview %}
+        {{ super() }}
+        {% snippet "package/snippets/web2.html" %}
+{% endblock %}
 {% block resource_additional_information_inner %}
 <div class="module-content">
 <h2>{{ _('Additional Information') }}</h2>
